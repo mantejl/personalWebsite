@@ -7,7 +7,7 @@ export default function Home() {
         className="w-1/4 mt-16 ml-16 lg:ml-8 lg:mr-16"
       />
 
-      <p className="text-center m:text-left mt-4 lg:mt-24 lg:text-xl lg:mr-16">
+      <p className="text-center m:text-left mt-4 lg:mt-24 lg:text-2xl lg:mr-16">
         Hello! My name is Mantej Lamba, and I am currently in my third year at
         the University of Southern California, pursuing a combined bachelor's
         and master's degree in Computer Science. I am on track to complete my

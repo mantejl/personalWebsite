@@ -17,23 +17,26 @@ export default function NavBar() {
         </span>
       </Navbar.Brand>
       <Navbar.Toggle />
-      <Navbar.Collapse className="mr-2">
-        <Navbar.Link href="#">
-          <span className="hover:text-blue-400 text-l">HOME</span>
+      <Navbar.Collapse className="mr-8 mt-3">
+        <Navbar.Link href="/">
+          <span className="hover:text-blue-900 text-lg">HOME</span>
         </Navbar.Link>
-        <Navbar.Link as={Link} href="#">
-          <span className="hover:text-blue-400 text-l">EXPERIENCE</span>
+        <Navbar.Link href="/experience">
+          <span className="hover:text-blue-900 text-lg">EXPERIENCE</span>
         </Navbar.Link>
-        <Navbar.Link href="#">
-          <span className="hover:text-blue-400 text-l">COURSEWORK</span>
+        <Navbar.Link href="/coursework">
+          <span className="hover:text-blue-900 text-lg">COURSEWORK</span>
         </Navbar.Link>
-        <Navbar.Link href="#">
-          <span className="hover:text-blue-400 text-l">
+        <Navbar.Link href="/campusinvolvements">
+          <span className="hover:text-blue-900 text-lg">
             CAMPUS INVOLVEMENTS
           </span>
         </Navbar.Link>
-        <Navbar.Link href="#">
-          <span className="hover:text-blue-400 text-l">PROJECTS</span>
+        <Navbar.Link href="/projects">
+          <span className="hover:text-blue-900 text-lg">PROJECTS</span>
+        </Navbar.Link>
+        <Navbar.Link href="/projects">
+          <span className="hover:text-blue-900 text-lg">RESUME</span>
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
