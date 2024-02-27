@@ -1,10 +1,9 @@
-import { Mukta } from "next/font/google";
+import { Sarabun } from "next/font/google";
 import NavBar from "./components/NavBar";
 import PageFooter from "./components/Footer";
-import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Mukta({
+const inter = Sarabun({
   subsets: ["latin-ext"],
   weight: ["500"],
 });

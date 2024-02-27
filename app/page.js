@@ -16,8 +16,10 @@ export default function Home() {
         areas include cybersecurity, AI/machine learning, and full-stack web
         development. I am enthusiastic about exploring the intersection of these
         fields and leveraging technology to address real-world challenges. As I
-        continue my education, I am eager to contribute to advancements in the
-        ever-evolving landscape of computer science.
+        continue my education, I am eager to gain hands-on experience through
+        both professional and academic opportunities. In the future, my goal is
+        to work in the cybersecurity field, building products and tools to help
+        protect our critical infrastructure and data.
       </p>
     </div>
   );
