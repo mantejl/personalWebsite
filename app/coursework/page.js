@@ -7,32 +7,126 @@ const CourseworkPage = () => {
   return (
     <div>
       <div>
-        <p className="font-bold text-2xl mb-2 ml-4 mt-4 text-blue-900">
+        <p className="font-bold text-3xl mb-2 ml-4 mt-4 text-blue-900">
           Currently Enrolled
         </p>
         <Accordion>
           <Accordion.Panel>
             <Accordion.Title>Spring 2024</Accordion.Title>
             <Accordion.Content>
-              <ul className="list-disc pl-5">
-                <li>
-                  CSCI 350: Introduction to Operating Systems
+              <ul className="list-disc pl-5 text-xl">
+                <li className="pb-4">
+                  <p className="text-2xl font-extrabold">
+                    CSCI 350: Introduction to Operating Systems
+                  </p>
                   <ul className="list-disc pl-5">
-                    <li>Lab 1: Introduction to Unix</li>
-                    <li>Lab 2: Processes and Signals</li>
-                    <li>Lab 3: Threads</li>
-                    <li>Lab 4: Synchronization</li>
-                    <li>Lab 5: Memory Management</li>
-                    <li>Lab 6: File Systems</li>
+                    <li>
+                      Introduction to operating systems' foundational concepts
+                      including processes, CPU, memory, storage, and security
+                    </li>
+                    <li>
+                      Developing new OS functionality, including system calls,
+                      thread management, process synchronization, and memory
+                      management in C
+                    </li>
+                    <li>
+                      <a
+                        href="https://web-app.usc.edu/soc/syllabus/20211/30175.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600"
+                      >
+                        Spring 2021 Syllabus
+                      </a>
+                    </li>
                   </ul>
                 </li>
-                <li>
-                  CSCI 401: Capstone: Design and Construction of Large Software
-                  Systems
+                <li className="pb-4">
+                  <p className="text-2xl font-extrabold">
+                    CSCI 401: Capstone: Design and Construction of Large
+                    Software Systems
+                  </p>
+                  <ul className="list-disc pl-5">
+                    <li>
+                      Working in a team of six to develop a software solution
+                      for an external stakeholder using Python, FastAPI,
+                      Supabase and integrations with PayPal, Stripe and
+                      SquareSpace APIs
+                    </li>
+                    <li>
+                      Currently building an automated process to allow a
+                      retirement learning community to track/edit their members,
+                      membership fees, donations and orders in an easy-to-use
+                      and simple manner
+                    </li>
+                    <li>
+                      <a
+                        href="https://web-app.usc.edu/soc/syllabus/20211/29963.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600"
+                      >
+                        Spring 2021 Syllabus
+                      </a>
+                    </li>
+                  </ul>
                 </li>
-                <li>CSCI 360: Introduction to Artificial Intelligence</li>
-                <li>
-                  CSCI 532: Innovation for Defense Applications (Master's Class)
+                <li className="pb-4">
+                  <p className="text-2xl font-extrabold">
+                    CSCI 360: Introduction to Artificial Intelligence
+                  </p>
+                  <ul className="list-disc pl-5">
+                    <li>
+                      Learning about concepts underlying intelligent systems
+                      like agents, problem-solving, search, representation,
+                      reasoning, planning and machine learning
+                    </li>
+                    <li>
+                      Writing Python code to implement algorithms for search,
+                      machine learning, neural networks, deep learning and tree
+                      problems
+                    </li>
+                    <li>
+                      <a
+                        href="https://web-app.usc.edu/soc/syllabus/20191/30000.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600"
+                      >
+                        Spring 2019 Syllabus
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li className="pb-4">
+                  <p className="text-2xl font-extrabold">
+                    CSCI 532: Innovation for Defense Applications (Master's
+                    Class)
+                  </p>
+                  <ul className="list-disc pl-5">
+                    <li>
+                      Part of a five person group that is working to develop a
+                      MVP (minimum viable product) for a defense problem sourced
+                      from sponsors in the Department of Defense, Intelligence
+                      Communities, and Homeland Security
+                    </li>
+                    <li>
+                      Engaging in customer discovery, establishing success
+                      metrics, and creating prototypes to propose quality
+                      problem solutions
+                    </li>
+
+                    <li>
+                      <a
+                        href="http://csclass.info/USC/H4D/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600"
+                      >
+                        Spring 2022 Syllabus
+                      </a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </Accordion.Content>

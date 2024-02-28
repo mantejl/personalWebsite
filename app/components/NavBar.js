@@ -6,13 +6,13 @@ import { Navbar } from "flowbite-react";
 export default function NavBar() {
   return (
     <Navbar fluid rounded>
-      <Navbar.Brand>
+      <Navbar.Brand as={Link} href="/">
         <img
           src="/favicon.ico"
-          className="mr-3 h-12 pt-2 ml-2 mt-3 mb-3"
+          className="mr-3 h-12 pt-2 ml-2 mt-3 mb-2"
           alt="Flowbite React Logo"
         />
-        <span className="self-center font-serif whitespace-nowrap text-3xl font-semibold text-blue-900 pt-2">
+        <span className="self-center whitespace-nowrap text-3xl font-semibold text-blue-900 pt-2">
           Mantej Lamba
         </span>
       </Navbar.Brand>
