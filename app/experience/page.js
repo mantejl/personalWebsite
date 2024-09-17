@@ -40,6 +40,51 @@ const ExperiencePage = () => {
           <Timeline.Item>
             <Timeline.Point icon={HiCalendar} />
             <Timeline.Content>
+              <Timeline.Time>May 2024 - Aug 2024</Timeline.Time>
+              <Timeline.Title>
+                Software Engineer Intern at Nuna Inc
+              </Timeline.Title>
+              <Timeline.Body>
+                <ul className="ml-4">
+                  <li>
+                    → Worked within the Risk team to enhance and develop core
+                    features for a recently developed Java-centric platform
+                    responsible for performing risk analysis on e-commerce
+                    transactions
+                  </li>
+                  <li>
+                    → Successfully completed the integration of a third-party
+                    device fingerprinting system into the core software that
+                    drives our risk assessment decisions
+                  </li>
+                  <li>
+                    → Developed several Java and Maven-based tools for internal
+                    teams to harness our risk decision processing, with
+                    deployment facilitated through Jenkins
+                  </li>
+                  <li>
+                    → Introduced a new functionality that allows users to
+                    actively simulate risk decisions
+                  </li>
+                  <li>
+                    → Designed and delivered a successful software design
+                    solution using Lucidchart
+                  </li>
+                  <li>
+                    → Strategically tested newly built features using tools such
+                    as SoapUI and MongoDB Compass
+                  </li>
+                  <li>
+                    → Tech Stack: Python, SQL, Databricks, Jupyter Notebook,
+                    PySpark, Prefect
+                  </li>
+                </ul>
+              </Timeline.Body>
+            </Timeline.Content>
+          </Timeline.Item>
+          <Timeline.Item>
+            <Timeline.Point icon={HiCalendar} />
+            <Timeline.Content>
               <Timeline.Time>May 2023 - Aug 2023</Timeline.Time>
               <Timeline.Title>
                 Software Engineer Intern at Blackhawk Network
