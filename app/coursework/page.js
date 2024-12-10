@@ -18,9 +18,101 @@ const CourseworkPage = () => {
         <p className="font-bold text-3xl mb-2 ml-4 mt-4 text-blue-900">
           Currently Enrolled
         </p>
-        <Accordion theme={customTheme}>
-          <Accordion.Panel>
-            <Accordion.Title>Spring 2024</Accordion.Title>
+        <Accordion >
+        <Accordion.Panel>
+            <Accordion.Title className="text-2xl">Spring 2024</Accordion.Title>
+            <Accordion.Content>
+              <ul className="list-disc pl-5 text-xl">
+                <li className="pb-4">
+                  <p className="text-2xl font-extrabold">
+                    CSCI 353: Introduction to Internetworking
+                  </p>
+                  <ul className="list-disc pl-5">
+                    <li>
+                    Learned about design principles, layering, protocol design/analysis of the global Internet, networked applications, 
+                    the structure/architecture of the Internet, protocols for network transport and congestion control, 
+                    network layer and routing, link layer/MAC, and network security
+                    </li>
+                    <li>
+                      Wrote multi-threaded programs to create a network of communicating servers
+                    </li>
+                    <li>
+                      <a
+                        href="https://web-app.usc.edu/soc/syllabus/20211/30175.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600"
+                      >
+                        GitHub Link
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li className="pb-4">
+                  <p className="text-2xl font-extrabold">
+                    CSCI 570: Analysis of Algorithms
+                  </p>
+                  <ul className="list-disc pl-5">
+                    <li>
+                      Explored algorithm design techniques such as greedy, divide and conquer, dynamic programming, network flow, reduction,
+                      approximation, linear programming and randomization for efficient algorithm construction
+                    </li>
+                    <li>
+                      Completed various written theory assignments that required practical applications of content learned in class
+                    </li>
+                    <li>
+                      <a
+                        href="https://web-app.usc.edu/soc/syllabus/20243/30099.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600"
+                      >
+                        Fall 2024 Syllabus
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li className="pb-4">
+                  <p className="text-2xl font-extrabold">
+                    DSCI 552: Machine Learning for Data
+                    Science
+                  </p>
+                  <ul className="list-disc pl-5">
+                    <li>
+                     Introduction to major algorithms used in machine learning, supervised and unsupervised learning, regression/classification methods, 
+                     hidden Markov/graphical models, feedforward/recurrent neural networks and deep learning
+                    </li>
+                    <li>
+                      Writing Python code to implement algorithms for search,
+                      machine learning, neural networks, deep learning and tree
+                      problems
+                    </li>
+                    <li>
+                      <a
+                        href="https://web-app.usc.edu/soc/syllabus/20191/30000.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600"
+                      >
+                      GitHub
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                
+              </ul>
+            </Accordion.Content>
+          </Accordion.Panel>
+        </Accordion>
+      </div>
+
+      <div>
+        <p className="font-bold text-3xl mb-2 ml-4 mt-4 text-blue-900">
+          Previously Taken
+        </p>
+        <Accordion>
+        <Accordion.Panel>
+            <Accordion.Title className="text-2xl">Spring 2024</Accordion.Title>
             <Accordion.Content>
               <ul className="list-disc pl-5 text-xl">
                 <li className="pb-4">
@@ -139,16 +231,8 @@ const CourseworkPage = () => {
               </ul>
             </Accordion.Content>
           </Accordion.Panel>
-        </Accordion>
-      </div>
-
-      <div>
-        <p className="font-bold text-3xl mb-2 ml-4 mt-4 text-blue-900">
-          Previously Taken
-        </p>
-        <Accordion>
           <Accordion.Panel>
-            <Accordion.Title>Fall 2023</Accordion.Title>
+            <Accordion.Title className="text-2xl">Fall 2023</Accordion.Title>
             <Accordion.Content>
               <ul className="list-disc pl-5 text-xl">
                 <li className="pb-4">
@@ -276,7 +360,7 @@ const CourseworkPage = () => {
           </Accordion.Panel>
 
           <Accordion.Panel>
-            <Accordion.Title>Spring 2023</Accordion.Title>
+            <Accordion.Title className="text-2xl">Spring 2023</Accordion.Title>
             <Accordion.Content>
               <ul className="list-disc pl-5 text-xl">
                 <li>
@@ -441,7 +525,7 @@ const CourseworkPage = () => {
           </Accordion.Panel>
 
           <Accordion.Panel>
-            <Accordion.Title>Fall 2022</Accordion.Title>
+            <Accordion.Title className="text-2xl">Fall 2022</Accordion.Title>
             <Accordion.Content>
               <ul className="list-disc pl-5 text-xl">
                 <li>
@@ -627,7 +711,7 @@ const CourseworkPage = () => {
           </Accordion.Panel>
 
           <Accordion.Panel>
-            <Accordion.Title>Spring 2022</Accordion.Title>
+            <Accordion.Title className="text-2xl">Spring 2022</Accordion.Title>
             <Accordion.Content>
               <ul className="list-disc pl-5 text-xl">
                 <li>

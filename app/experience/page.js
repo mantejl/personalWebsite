@@ -42,37 +42,32 @@ const ExperiencePage = () => {
             <Timeline.Content>
               <Timeline.Time>May 2024 - Aug 2024</Timeline.Time>
               <Timeline.Title>
-                Software Engineer Intern at Nuna Inc
+                Software Engineer Intern at Nuna
               </Timeline.Title>
               <Timeline.Body>
                 <ul className="ml-4">
                   <li>
-                    → Worked within the Risk team to enhance and develop core
-                    features for a recently developed Java-centric platform
-                    responsible for performing risk analysis on e-commerce
-                    transactions
+                    → Designed and implemented a machine learning-based anomaly detection model to identify 
+                    discrepancies between incurred and paid dates in medical claims, evaluating techniques like moving average, 
+                    ARIMA, SARIMA, Holt-Winters, and clustering across multiple datasets
                   </li>
                   <li>
-                    → Successfully completed the integration of a third-party
-                    device fingerprinting system into the core software that
-                    drives our risk assessment decisions
+                    → Conducted extensive exploratory data analysis to identify patterns and trends in claims data, refining feature selection and engineering for enhanced model accuracy
                   </li>
                   <li>
-                    → Developed several Java and Maven-based tools for internal
-                    teams to harness our risk decision processing, with
-                    deployment facilitated through Jenkins
+                    → Deployed the solution using Prefect, establishing seamless integration 
+                    into production workflows with automated monitoring and error handling
                   </li>
                   <li>
-                    → Introduced a new functionality that allows users to
-                    actively simulate risk decisions
+                    → Developed weighted average datasets and performed advanced statistical analysis during the project's final phase, generating detailed insights 
+                    and recommendations while storing results in S3 for reporting and future use
                   </li>
                   <li>
-                    → Designed and delivered a successful software design
-                    solution using Lucidchart
+                    → Collaborated with cross-functional teams, including data scientists and engineers, to align technical solutions with business objectives 
                   </li>
                   <li>
-                    → Strategically tested newly built features using tools such
-                    as SoapUI and MongoDB Compass
+                    → Built and optimized the model in both Jupyter and Databricks environments, 
+                    utilizing PySpark for large-scale data processing
                   </li>
                   <li>
                     → Tech Stack: Python, SQL, Databricks, Jupyter Notebook,

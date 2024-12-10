@@ -8,7 +8,7 @@ import { MdEmail } from "react-icons/md";
 const customTheme = {
   footer: {
     icon: {
-      size: "h-8 w-8",
+      size: "h-12 w-12",
       base: "text-blue-900",
     },
   },
