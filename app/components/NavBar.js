@@ -27,7 +27,7 @@ export default function NavBar() {
         <Navbar.Link href="/coursework">
           <span className="hover:text-blue-900 text-lg">COURSEWORK</span>
         </Navbar.Link>
-        <Navbar.Link href="/campusinvolvements">
+        <Navbar.Link href="/campusInvolvements">
           <span className="hover:text-blue-900 text-lg">
             CAMPUS INVOLVEMENTS
           </span>
