@@ -3,7 +3,7 @@
 import React from "react";
 import { Timeline } from "flowbite-react";
 import { Flowbite } from "flowbite-react";
-import { HiArrowNarrowRight, HiCalendar } from "react-icons/hi";
+import { HiCalendar } from "react-icons/hi";
 
 const customTheme = {
   timeline: {
@@ -19,18 +19,10 @@ const customTheme = {
           base: "text-xl font-semibold text-gray-900 dark:text-white pl-2",
         },
       },
-      point: {
-        marker: {
-          icon: {
-            base: "h-9 w-9 text-blue-900 ",
-            wrapper:
-              "absolute -left-6 flex h-12 w-12 items-center justify-center rounded-full bg-blue-200",
-          },
-        },
-      },
     },
   },
 };
+
 
 const ExperiencePage = () => {
   return (
@@ -38,7 +30,13 @@ const ExperiencePage = () => {
       <div className="ml-16 mr-8 mt-10">
         <Timeline>
           <Timeline.Item>
-            <Timeline.Point icon={HiCalendar} />
+              <div className="flex items-center space-x-2">
+                <img
+                  src="/nunaLogo.png"
+                  alt="Nuna Logo"
+                  className="h-16 w-16 object-cover rounded-full"
+                />
+              </div>
             <Timeline.Content>
               <Timeline.Time>May 2024 - Aug 2024</Timeline.Time>
               <Timeline.Title>
@@ -78,7 +76,13 @@ const ExperiencePage = () => {
             </Timeline.Content>
           </Timeline.Item>
           <Timeline.Item>
-            <Timeline.Point icon={HiCalendar} />
+          <div className="absolute -left-12 -top-4">
+              <img
+                src="/blackhawkLogo.jpeg" 
+                alt="Blackhawk Logo"
+                className="h-16 w-16 object-cover rounded-full"
+              />
+          </div>
             <Timeline.Content>
               <Timeline.Time>May 2023 - Aug 2023</Timeline.Time>
               <Timeline.Title>

@@ -19,8 +19,16 @@ const CourseworkPage = () => {
           Currently Enrolled
         </p>
         <Accordion >
+        </Accordion>
+      </div>
+
+      <div>
+        <p className="font-bold text-3xl mb-2 ml-4 mt-4 text-blue-900">
+          Previously Taken
+        </p>
+        <Accordion>
         <Accordion.Panel>
-            <Accordion.Title className="text-2xl">Spring 2024</Accordion.Title>
+            <Accordion.Title className="text-2xl">Fall 2024</Accordion.Title>
             <Accordion.Content>
               <ul className="list-disc pl-5 text-xl">
                 <li className="pb-4">
@@ -34,7 +42,7 @@ const CourseworkPage = () => {
                     network layer and routing, link layer/MAC, and network security
                     </li>
                     <li>
-                      Wrote multi-threaded programs to create a network of communicating servers
+                      Wrote multi-threaded programs to create a network of communicating servers, developed a CDN-based video streaming system with bitrate adaptation, implemented DNS load balancing, and designed a reliable transport protocol on UDP 
                     </li>
                     <li>
                       <a
@@ -103,14 +111,6 @@ const CourseworkPage = () => {
               </ul>
             </Accordion.Content>
           </Accordion.Panel>
-        </Accordion>
-      </div>
-
-      <div>
-        <p className="font-bold text-3xl mb-2 ml-4 mt-4 text-blue-900">
-          Previously Taken
-        </p>
-        <Accordion>
         <Accordion.Panel>
             <Accordion.Title className="text-2xl">Spring 2024</Accordion.Title>
             <Accordion.Content>

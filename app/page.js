@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center">
+    <div className="animate-fadeIn flex flex-col lg:flex-row items-center justify-center">
       <img
         src={"/profilePicture.JPG"}
         alt="Your Profile Picture"
@@ -10,8 +10,7 @@ export default function Home() {
       <p className="text-center m:text-left mb-8 lg:mt-24 lg:text-2xl lg:mr-16">
         Hello! My name is Mantej Lamba, and I am currently in my fourth year at
         the University of Southern California, pursuing a combined bachelor's
-        and master's degree in Computer Science. I am on track to complete my
-        studies within four years, with an anticipated graduation date of 2025.
+        and master's degree in Computer Science, with an anticipated graduation date of 2025.
         My academic journey reflects a strong passion for technology, and my
         focus areas include cybersecurity, AI/machine learning, and full-stack
         web development. I am enthusiastic about exploring the intersection of
