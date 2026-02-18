@@ -1,34 +1,31 @@
-import { GraduationCap, Award, BookOpen, Users } from "lucide-react";
+import { BookOpen, Users } from "lucide-react";
 import PageWrapper from "@/components/PageWrapper";
 import SectionHeading from "@/components/SectionHeading";
 import GlassCard from "@/components/GlassCard";
 
 const schools = [
   {
-    name: "University of Technology",
-    degree: "B.S. in Computer Science",
-    period: "2020 – 2024",
-    gpa: "3.85 / 4.0",
-    coursework: ["Data Structures & Algorithms", "Machine Learning", "Distributed Systems", "Database Design"],
-    achievements: ["Dean's List (6 semesters)", "CS Department Honors", "Hackathon Winner 2023"],
+    name: "University of Southern California",
+    degree: "Bachelor of Science in Computer Science",
+    period: "Aug 2021 – May 2025",
+    coursework: ["Data Structures", "Algorithms", "Artificial Intelligence", "Machine Learning", "Operating Systems", "Networking"],
     involvements: [
-      { name: "ACM Student Chapter", role: "Vice President" },
-      { name: "Hack Club", role: "Project Lead" },
-      { name: "CS Tutoring Center", role: "Tutor" },
-      { name: "Intramural Soccer", role: "Team Captain" },
+      { name: "LavaLab" },
+      { name: "ShiftSC" },
+      { name: "Resident Assistant" },
+      { name: "Cathartic" },
+      { name: "Chess Club" },
     ],
   },
   {
-    name: "Springfield High School",
-    degree: "High School Diploma",
-    period: "2016 – 2020",
-    gpa: "4.0 / 4.0",
-    coursework: ["AP Computer Science", "AP Calculus BC", "AP Physics"],
-    achievements: ["Valedictorian", "National Merit Scholar", "Robotics Club President"],
+    name: "University of Southern California",
+    degree: "Master of Science in Computer Science",
+    period: "Jan 2024 – Dec 2025",
+    coursework: ["Algorithms", "Artificial Intelligence", "Machine Learning", "Operating Systems", "Networking"],
     involvements: [
-      { name: "Robotics Club", role: "President" },
-      { name: "Math Olympiad Team", role: "Captain" },
-      { name: "Student Government", role: "Treasurer" },
+      { name: "Student Researcher" },
+      { name: "LavaLab" },
+      { name: "CyBorg (Cybersecurity Club)" },
     ],
   },
 ];
@@ -44,13 +41,13 @@ const Education = () => (
         {schools.map((school, i) => (
           <GlassCard key={i} delay={i * 0.15} className="hover:scale-[1.02] transition-transform duration-300">
             <div className="flex items-start gap-4 mb-4">
-              <div className="p-3 rounded-xl bg-secondary text-foreground shrink-0">
-                <GraduationCap size={24} />
+              <div className="w-14 h-14 rounded-full overflow-hidden shrink-0 border border-border">
+                <img src="/logos/usclogo.jpeg" alt="USC" className="w-full h-full object-cover" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-foreground">{school.name}</h3>
                 <p className="text-muted-foreground font-medium text-sm">{school.degree}</p>
-                <p className="text-muted-foreground text-xs">{school.period} · GPA: {school.gpa}</p>
+                <p className="text-muted-foreground text-xs font-bold">{school.period}</p>
               </div>
             </div>
 
@@ -67,31 +64,17 @@ const Education = () => (
               </div>
             </div>
 
-            <div className="mb-4">
-              <div className="flex items-center gap-2 text-sm font-semibold text-foreground mb-2">
-                <Award size={14} /> Achievements
-              </div>
-              <ul className="space-y-1">
-                {school.achievements.map((a) => (
-                  <li key={a} className="text-sm text-muted-foreground flex gap-2">
-                    <span className="text-foreground/40">✦</span> {a}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
             <div>
               <div className="flex items-center gap-2 text-sm font-semibold text-foreground mb-2">
-                <Users size={14} /> Involvements & ECs
+                <Users size={14} /> Involvements
               </div>
-              <ul className="space-y-1.5">
+              <div className="flex flex-wrap gap-2">
                 {school.involvements.map((inv) => (
-                  <li key={inv.name} className="text-sm text-muted-foreground flex justify-between">
-                    <span>{inv.name}</span>
-                    <span className="text-xs text-muted-foreground/70">{inv.role}</span>
-                  </li>
+                  <span key={inv.name} className="text-xs px-3 py-1 rounded-full bg-secondary text-muted-foreground">
+                    {inv.name}
+                  </span>
                 ))}
-              </ul>
+              </div>
             </div>
           </GlassCard>
         ))}
