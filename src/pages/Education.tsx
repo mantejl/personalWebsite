@@ -1,4 +1,4 @@
-import { BookHeart, Users, FolderOpen } from "lucide-react";
+import { Lightbulb, Users, FolderOpen } from "lucide-react";
 import PageWrapper from "@/components/PageWrapper";
 import SectionHeading from "@/components/SectionHeading";
 import GlassCard from "@/components/GlassCard";
@@ -87,9 +87,9 @@ const Education = () => (
 
           <div className="mb-8">
             <div className="flex items-center justify-center gap-2 text-sm font-semibold text-foreground mb-1">
-              <BookHeart size={24} /> Memorable Courses
+              <Lightbulb size={24} /> Memorable Courses
             </div>
-            <p className="text-xs text-muted-foreground text-center mb-3 italic pt-2">classes beyond computer science that made my USC experience special :)</p>
+            <p className="text-xs text-muted-foreground text-center mb-3 italic pt-2">classes that made my USC experience special :)</p>
             <div className="flex flex-wrap justify-center gap-3">
               {courses.map((c) => (
                 c.link ? (
