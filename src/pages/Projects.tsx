@@ -72,7 +72,7 @@ const Projects = () => (
           <GlassCard
             key={i}
             delay={i * 0.1}
-            className="group hover:scale-[1.03] hover:glow-primary transition-all duration-300 flex flex-col"
+            className="group hover:scale-[1.03] hover:glow-primary transition-all duration-300 flex flex-col items-center text-center"
           >
             <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
               {project.name}
@@ -80,7 +80,7 @@ const Projects = () => (
             <p className="text-sm text-muted-foreground mb-4 flex-1">
               {project.description}
             </p>
-            <div className="flex flex-wrap gap-2 mb-4">
+            <div className="flex flex-wrap justify-center gap-2 mb-4">
               {project.tech.map((t) => (
                 <span
                   key={t}
@@ -90,7 +90,7 @@ const Projects = () => (
                 </span>
               ))}
             </div>
-            <div className="flex gap-3">
+            <div className="flex justify-center gap-3">
               {project.github && (
                 <a
                   href={project.github}
