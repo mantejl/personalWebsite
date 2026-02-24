@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { useState } from "react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import PageWrapper from "@/components/PageWrapper";
 import SectionHeading from "@/components/SectionHeading";
 import GlassCard from "@/components/GlassCard";
@@ -7,17 +8,42 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
+const FORMSPREE_ID = "xzdaknrb";
+
 const socials = [
-  { icon: Github, label: "GitHub", href: "#" },
-  { icon: Linkedin, label: "LinkedIn", href: "#" },
-  { icon: Twitter, label: "Twitter", href: "#" },
-  { icon: Mail, label: "Email", href: "mailto:hello@example.com" },
+  { icon: Mail, label: "Email", href: "mailto:mantej@usc.alumni.edu" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/mantejlamba/" },
+  { icon: Github, label: "GitHub", href: "https://github.com/mantejl" },
 ];
 
 const Contact = () => {
-  const handleSubmit = (e: React.FormEvent) => {
+  const [sending, setSending] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    toast.success("Message sent! (This is a placeholder)");
+    setSending(true);
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+
+      if (res.ok) {
+        toast.success("Message sent! I'll get back to you soon.");
+        form.reset();
+      } else {
+        toast.error("Something went wrong. Please try again.");
+      }
+    } catch {
+      toast.error("Something went wrong. Please try again.");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -25,37 +51,34 @@ const Contact = () => {
       <section className="container mx-auto px-6 py-16">
         <SectionHeading
           title="Contact"
-          subtitle="Let's connect — feel free to reach out!"
+          subtitle="Feel free to reach out!"
         />
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="max-w-2xl mx-auto">
           <GlassCard>
-            <h3 className="text-xl font-bold text-foreground mb-6">Send a Message</h3>
+            <h3 className="text-xl font-bold text-foreground mb-6 text-center">Send a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
-              <Input placeholder="Your Name" className="bg-secondary/50 border-white/10" />
-              <Input type="email" placeholder="Your Email" className="bg-secondary/50 border-white/10" />
-              <Textarea placeholder="Your Message" rows={5} className="bg-secondary/50 border-white/10" />
-              <Button type="submit" className="w-full bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90">
-                Send Message
+              <Input name="name" placeholder="Your Name" required className="bg-secondary/50 border-white/10" />
+              <Input name="email" type="email" placeholder="Your Email" required className="bg-secondary/50 border-white/10" />
+              <Textarea name="message" placeholder="Your Message" rows={5} required className="bg-secondary/50 border-white/10" />
+              <Button type="submit" disabled={sending} className="w-full bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90">
+                {sending ? "Sending..." : "Send Message"}
               </Button>
             </form>
-          </GlassCard>
 
-          <GlassCard className="flex flex-col justify-center">
-            <h3 className="text-xl font-bold text-foreground mb-6">Find Me Online</h3>
-            <div className="space-y-4">
+            <div className="flex justify-center gap-4 mt-6 pt-6 border-t border-white/10">
               {socials.map((s) => {
                 const Icon = s.icon;
                 return (
                   <a
                     key={s.label}
                     href={s.href}
-                    className="flex items-center gap-4 p-3 rounded-xl hover:bg-secondary/50 transition-colors group"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2.5 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
+                    title={s.label}
                   >
-                    <div className="p-2 rounded-lg bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
-                      <Icon size={20} />
-                    </div>
-                    <span className="text-foreground font-medium">{s.label}</span>
+                    <Icon size={20} />
                   </a>
                 );
               })}

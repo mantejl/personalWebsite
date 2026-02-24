@@ -37,12 +37,12 @@ const projects: ProjectItem[] = [
     linkLabel: "Curriculum",
   },
   {
-    name: "Cards for COVID Heroes",
+    name: "DriveX",
     description:
-      "Co-founded a COVID-19 initiative to thank frontline healthcare workers. Collected over 2,100 cards and delivered them to hospitals nationwide, with gift cards sponsored by Blackhawk Network.",
-    tech: ["Community Initiative"],
-    link: "https://cards4covidheroes.com/",
-    linkLabel: "Website",
+      "A safe night driving tool with real-time drowsiness detection via live camera, triggering alerts on fatigue. Includes a voice-based driving assistant to keep drivers engaged and alert.",
+    tech: ["Computer Vision", "Real-time Alerts", "AI"],
+    link: "https://devpost.com/software/drivex-ouwghk",
+    linkLabel: "Devpost",
   },
   {
     name: "Cybersecurity Audio Show",
@@ -53,12 +53,12 @@ const projects: ProjectItem[] = [
     linkLabel: "Spotify",
   },
   {
-    name: "DriveX",
+    name: "Cards for COVID Heroes",
     description:
-      "A safe night driving tool with real-time drowsiness detection via live camera, triggering alerts on fatigue. Includes a voice-based driving assistant to keep drivers engaged and alert.",
-    tech: ["Computer Vision", "Real-time Alerts", "AI"],
-    link: "https://devpost.com/software/drivex-ouwghk",
-    linkLabel: "Devpost",
+      "Co-founded a COVID-19 initiative to thank frontline healthcare workers. Collected over 2,100 cards and delivered them to hospitals nationwide, with gift cards sponsored by Blackhawk Network.",
+    tech: ["Community Initiative"],
+    link: "https://cards4covidheroes.com/",
+    linkLabel: "Website",
   },
 ];
 
