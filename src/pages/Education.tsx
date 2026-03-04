@@ -66,7 +66,7 @@ const projects = [
   },
 ];
 
-const Education = () => (
+const Education = () => ( 
   <PageWrapper>
     <section className="container mx-auto px-6 py-16">
       <SectionHeading title="Education" />
