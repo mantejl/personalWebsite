@@ -72,8 +72,8 @@ const Index = () => {
         <GlassCard className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold mb-4 text-foreground text-center">About Me</h2>
           <p className="text-muted-foreground leading-relaxed text-center">
-          I'm a Software Engineer based in the Bay Area, with experience in product development, machine learning and full-stack applications. Beyond my current work, I’m especially interested in cybersecurity, applied AI/ML, and building innovative solutions in startup environments. 
-          In my free time, I enjoy playing basketball, chess, gaming, and exploring new places and cuisines.
+          I'm a Software Engineer based in the Bay Area, with experience in full-stack engineering and machine learning. Beyond my current work, I’m especially interested in cybersecurity, applied AI/ML, and building innovative solutions in startup environments.
+          In my free time, I enjoy basketball, chess, gaming, watching movies (proud AMC A-Lister) and exploring new places and cuisines.
           </p>
         </GlassCard>
       </section>

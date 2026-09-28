@@ -21,7 +21,10 @@ const experiences: {
     points: [
       <>Currently working on building new capabilities for <a href="https://aws.amazon.com/quick/" target="_blank" rel="noopener noreferrer" className="text-foreground font-medium hover:underline">Amazon QuickSuite</a>, an agentic AI-powered business intelligence platform from AWS that helps enterprises analyze data, automate workflows, and accelerate business operations</>,
       "Developed and shipped full-stack features for Quick Flows, enabling users to build automations for repetitive tasks using natural language prompts and share customizable workflows across teams",
-      "Drove region expansion efforts to deploy and scale QuickSuite services into new AWS regions",
+      "Designed and built an event-driven service that lets users trigger AI agents and automated workflows by email, including attachment handling, asynchronous execution, and abuse-prevention safeguards for reliable processing at scale",
+      "Executed a zero-downtime data migration across thousands of existing workflows, enabling a safe rollout of new APIs while preserving full backward compatibility",
+      "Led the end-to-end expansion of an AI usage-metering service into a regulated government-cloud environment, building region-aware infrastructure and coordinating cross-team dependencies through a validated production launch",
+      "Improved the approval experience for AI workflows by generating clear, trustworthy permission descriptions from authoritative policy data, preventing AI-generated text from misrepresenting what access is being requested",
     ],
   },
   {
